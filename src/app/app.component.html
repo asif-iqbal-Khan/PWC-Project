@@ -1,0 +1,30 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark px-3" *ngIf="user">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" routerLink="/" routerLinkActive="active"
+      >Home</a
+    >
+    <li class="dropdown">
+      <a routerLink="#" class="nav-item nav-link" routerLinkActive="active"
+        >More</a
+      >
+      <ul class="dropdown-menu">
+        <li>
+          <a routerLink="#" routerLinkActive="active">Submenu 1</a>
+        </li>
+        <li>
+          <a routerLink="#" routerLinkActive="active">Submenu 2</a>
+        </li>
+      </ul>
+    </li>
+    >
+    <button class="btn btn-link nav-item nav-link" (click)="logout()">
+      Logout
+    </button>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

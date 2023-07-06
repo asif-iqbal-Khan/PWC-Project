@@ -1,0 +1,18 @@
+/* Add application styles & imports to this file! */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  list-style: none;
+  z-index: 1;
+}
+
+.dropdown-menu li a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
